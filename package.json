@@ -4,11 +4,20 @@
   "description": "My first backend application",
   "main": "app.js",
   "scripts": {
+    "start":"node app.js",
     "test": "test"
+  },
+  "dependencies":{
+    "cors":"^2.8.5",
+    "express":"^4.17.2",
+    "healthcheck": "^0.1.3"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MarionMichielsen/sti-backend.git"
+  },
+  "engines":{
+    "node": "17.x"
   },
   "author": "Marion Michielsen",
   "license": "ISC",
