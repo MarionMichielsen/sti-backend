@@ -21,12 +21,10 @@ app.use(bodyParser.json())
   app.post("/save", (req, res)=>{
   headers={http_status:200, "cache-control": "no-cache"}
   console.log('TRYING to get data from frontend to backend')
-  var data = JSON.parse(req.body)
-  uuid = data.uuid;
-  x = data.x;
-  y=data.y;
-  // x = req.body.x;
-  // y = req.body.y;
+
+  uuid = req.body.uuid;
+  x = req.body.x;
+  y = req.body.y;
 
   users.push(uuid);
   XPosMap.set(uuid, x);
