@@ -30,7 +30,7 @@ app.use(bodyParser.json())
   XPosMap.set(uuid, x);
   YPosMap.set(uuid, y);
   console.log("Y "+y+" Z: "+z+" UUID: "+uuid);
-console.log(users.get[0], users.get[1]);
+//console.log(users.get[0], users.get[1]);
 
   res.set('Content-Type', 'application/json')
 })
