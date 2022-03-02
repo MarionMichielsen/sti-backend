@@ -14,7 +14,7 @@ app.use(cors())
 app.use(bodyParser.json())
 
 //app.post("https://marionmichielsen-backend.herokuapp.com/save", (req, res)=>{
-  app.post("/save", (req, res)=>{
+  app.put("/save", (req, res)=>{
   headers={http_status:200, "cache-control": "no-cache"}
   console.log('TRYING to get data from frontend to backend')
   uuid = req.body.uuid;
