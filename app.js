@@ -13,7 +13,8 @@ app.use(express.urlencoded({ extended: true}));
 app.use(cors())
 app.use(bodyParser.json())
 
-app.post("https://marionmichielsen-backend.herokuapp.com/save", (req, res)=>{
+//app.post("https://marionmichielsen-backend.herokuapp.com/save", (req, res)=>{
+  app.post("/save", (req, res)=>{
   headers={http_status:200, "cache-control": "no-cache"}
   console.log('TRYING to get data from frontend to backend')
   uuid = req.body.uuid;
@@ -26,7 +27,7 @@ app.post("https://marionmichielsen-backend.herokuapp.com/save", (req, res)=>{
   res.set('Content-Type', 'application/json')
 })
 
-app.get("https://marionmichielsen-backend.herokuapp.com/save", (req, res)=>{
+app.get("/save", (req, res)=>{
   headers={http_status:200, "cache-control": "no-cache"}
   body= 
   [
