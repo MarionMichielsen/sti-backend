@@ -26,9 +26,9 @@ app.use(bodyParser.json())
   x = req.body.x;
   y = req.body.y;
 
-  users.push(uuid);
-  XPosMap.set(uuid, x);
-  YPosMap.set(uuid, y);
+  // users.push(uuid);
+  // XPosMap.set(uuid, x);
+  // YPosMap.set(uuid, y);
   console.log("Y "+y+" Z: "+z+" UUID: "+uuid);
 //console.log(users.get[0], users.get[1]);
 
