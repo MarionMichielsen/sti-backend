@@ -27,9 +27,9 @@ app.use(bodyParser.json())
   users.push(uuid);
   XPosMap.set(uuid, x);
   YPosMap.set(uuid, y);
-  console.log("Y "+y);
-  console.log("Z " +x)
-  console.log("UUID: "+uuid)
+  console.log("Y "+y+" Z: "+z+" UUID: "+uuid);
+console.log(users.get[0], users.get[1]);
+
 
   res.set('Content-Type', 'application/json')
 })
@@ -55,7 +55,7 @@ app.get("/save", (req, res)=>{
   headers={http_status:200, "cache-control": "no-cache"}
   body= 
   [
-    {
+    { "uuid":uuid,
       "x": returnGreenXPosition(uuid),
       "y": returnGreenYPosition(uuid),
       // "x": 50,
